@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Rose-DBx-AutoReconnect
-version:             0.01
+version:             0.02
 abstract:            Rose::DB with auto-reconnect to server
 license:             ~
 author:              

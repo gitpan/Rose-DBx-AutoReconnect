@@ -3,6 +3,7 @@ MANIFEST
 Makefile.PL
 README
 lib/Rose/DBx/AutoReconnect.pm
+lib/Rose/DBx/Cache/Anywhere.pm
 t/00-load.t
 t/pod-coverage.t
 t/pod.t

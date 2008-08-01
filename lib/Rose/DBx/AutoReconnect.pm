@@ -5,7 +5,7 @@ use Carp;
 use base qw( Rose::DB );
 use Rose::DBx::Cache::Anywhere;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 __PACKAGE__->db_cache_class('Rose::DBx::Cache::Anywhere');
 __PACKAGE__->use_private_registry(1);
