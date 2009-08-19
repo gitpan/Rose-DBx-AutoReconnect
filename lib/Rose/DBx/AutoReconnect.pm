@@ -5,7 +5,7 @@ use Carp;
 use base qw( Rose::DB );
 use Rose::DBx::Cache::Anywhere;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 __PACKAGE__->db_cache_class('Rose::DBx::Cache::Anywhere');
 __PACKAGE__->use_private_registry(1);
@@ -110,7 +110,7 @@ Returns pretty label unique to this DB object. Used by loglabel().
 sub nick {
     my $self = shift;
     return join( '.',
-        $self->domain, $self->type, $self->database . '@' . $self->host );
+        $self->domain, $self->type, $self->database . '@' . ($self->host||'localhost') );
 }
 
 =head2 dbi_connect
