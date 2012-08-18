@@ -9,5 +9,6 @@ Revision history for Rose-DBx-AutoReconnect
 0.03    18 Aug 2009
         * if $db->host not set, default to 'localhost' in logger
 
-
+0.04    18 Aug 2012
+        * improve error message when ping() fails
 

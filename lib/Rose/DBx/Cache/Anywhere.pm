@@ -58,7 +58,7 @@ sub prepare_db {
     }
 
     if ( !$db->dbh->ping ) {
-        $db->logger("ping failed");
+        $db->logger("dbh->ping failed ... unsetting dbh for automatic retry");
         $db->dbh(undef);
     }
 }
